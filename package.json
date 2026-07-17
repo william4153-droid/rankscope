@@ -1,0 +1,22 @@
+{
+  "name": "keyword-competition-analyzer",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Netlify SEO analyzer with Supabase authentication, quotas, history and admin management",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.0.0",
+    "@supabase/supabase-js": "^2.110.7",
+    "cheerio": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}

@@ -1,0 +1,39 @@
+RANKSCOPE V2 — START HERE
+=========================
+
+This version includes:
+- Public professional homepage
+- Email signup and login
+- Protected keyword analyzer
+- 20 searches per user per Pakistan day
+- User search history
+- Admin dashboard and user management
+
+DEPLOYMENT ORDER
+----------------
+
+1. Create a Supabase project.
+2. Open Supabase > SQL Editor.
+3. Copy and run the complete file: supabase/schema.sql
+4. In Supabase > Authentication > URL Configuration, set your Netlify site URL.
+5. Upload this project to GitHub.
+6. Import the GitHub repository into Netlify.
+7. Add these Netlify environment variables:
+
+   GEMINI_API_KEY
+   GEMINI_MODEL=gemini-3.5-flash
+   SUPABASE_URL
+   SUPABASE_ANON_KEY
+   SUPABASE_SERVICE_ROLE_KEY
+   ADMIN_EMAILS
+
+8. Deploy again after adding the environment variables.
+9. Sign up using the exact email placed in ADMIN_EMAILS.
+10. Log in. The Admin Panel will appear in the left menu.
+
+IMPORTANT
+---------
+Never put SUPABASE_SERVICE_ROLE_KEY or GEMINI_API_KEY inside public/app.js,
+HTML, GitHub screenshots, or any public frontend variable.
+
+Read README.md for the complete setup instructions.

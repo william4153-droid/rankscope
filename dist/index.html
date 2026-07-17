@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Analyze keyword competition, ranking pages and competitor content depth with a secure account dashboard."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>RankScope — Keyword Competition Analyzer</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+    <div id="boot-screen" class="boot-screen">
+      <div class="boot-logo">R</div>
+      <div class="boot-spinner"></div>
+      <p>Loading RankScope…</p>
+    </div>
+
+    <div id="public-app" class="public-app hidden">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="RankScope home">
+          <span class="brand-mark">R</span>
+          <span>RankScope</span>
+        </a>
+        <nav class="public-nav" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <button class="text-button" type="button" data-open-auth="login">Log in</button>
+          <button class="primary-button compact" type="button" data-open-auth="signup">Create account</button>
+        </nav>
+        <button class="mobile-auth-button" type="button" data-open-auth="signup">Get started</button>
+      </header>
+
+      <main id="top">
+        <section class="landing-hero">
+          <div class="hero-glow glow-one"></div>
+          <div class="hero-glow glow-two"></div>
+          <div class="landing-shell hero-layout">
+            <div class="hero-copy">
+              <div class="eyebrow"><span></span> AI-POWERED SEO RESEARCH</div>
+              <h1>See what it takes to rank <em>before</em> you write.</h1>
+              <p class="hero-lead">
+                Enter a keyword and review estimated competition, search intent, top ranking URLs,
+                page word counts, content angles and competitor gaps in one dashboard.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-button large" type="button" data-open-auth="signup">
+                  Start free analysis
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button class="secondary-button large" type="button" data-open-auth="login">
+                  Sign in
+                </button>
+              </div>
+              <div class="hero-proof">
+                <div><strong>20</strong><span>searches per day</span></div>
+                <div><strong>10</strong><span>ranking pages reviewed</span></div>
+                <div><strong>Live</strong><span>Gemini web research</span></div>
+              </div>
+            </div>
+
+            <div class="product-preview" aria-label="Dashboard preview">
+              <div class="preview-topbar">
+                <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+                <span class="preview-url">rankscope.app/dashboard</span>
+              </div>
+              <div class="preview-body">
+                <div class="preview-sidebar">
+                  <div class="preview-logo">R</div>
+                  <span class="preview-nav active"></span>
+                  <span class="preview-nav"></span>
+                  <span class="preview-nav"></span>
+                </div>
+                <div class="preview-content">
+                  <div class="preview-heading-row">
+                    <div><span class="preview-kicker"></span><span class="preview-title"></span></div>
+                    <span class="preview-avatar"></span>
+                  </div>
+                  <div class="preview-search">
+                    <span>best camera for travel</span><b>Analyze</b>
+                  </div>
+                  <div class="preview-metrics">
+                    <div><small>Competition</small><strong>42</strong><span>Moderate</span></div>
+                    <div><small>Intent</small><strong>Commercial</strong><span>Comparison-led</span></div>
+                    <div><small>Average words</small><strong>2,340</strong><span>8 pages measured</span></div>
+                  </div>
+                  <div class="preview-table">
+                    <div class="preview-table-head"><span>Ranking page</span><span>Words</span></div>
+                    <div><i>1</i><span class="preview-line wide"></span><b>2,814</b></div>
+                    <div><i>2</i><span class="preview-line"></span><b>2,420</b></div>
+                    <div><i>3</i><span class="preview-line mid"></span><b>1,965</b></div>
+                    <div><i>4</i><span class="preview-line wide"></span><b>3,102</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip">
+          <div class="landing-shell trust-grid">
+            <span>Competition scoring</span>
+            <span>Live ranking URLs</span>
+            <span>Measured word counts</span>
+            <span>Search history</span>
+            <span>Secure user accounts</span>
+          </div>
+        </section>
+
+        <section id="features" class="landing-section">
+          <div class="landing-shell">
+            <div class="section-intro centered">
+              <span class="section-kicker">EVERYTHING IN ONE PLACE</span>
+              <h2>A faster way to qualify keywords</h2>
+              <p>Stop opening ten tabs and manually counting content. RankScope brings the core SERP checks into one structured report.</p>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card featured">
+                <div class="feature-icon">01</div>
+                <h3>Competition estimate</h3>
+                <p>Get a 0–100 difficulty estimate based on ranking-domain strength, intent match, specialization and content depth.</p>
+                <div class="mini-score"><strong>42</strong><span><b style="width:42%"></b></span><small>Moderate</small></div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">02</div>
+                <h3>Top ranking URLs</h3>
+                <p>Review the actual pages appearing prominently for the keyword, not only the domains competing in the niche.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">03</div>
+                <h3>Page word counts</h3>
+                <p>Measure accessible ranking-page content and compare the minimum, maximum and average content depth.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">04</div>
+                <h3>Content gaps</h3>
+                <p>See dominant angles, competitor strengths, missing subtopics and a practical content format to compete.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">05</div>
+                <h3>Personal history</h3>
+                <p>Every completed search is saved to your account, including keyword, market, intent and competition score.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">06</div>
+                <h3>Daily usage control</h3>
+                <p>Each standard account receives 20 analyses per Pakistan day, with secure server-side quota enforcement.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="landing-section dark-section">
+          <div class="landing-shell workflow-layout">
+            <div class="section-intro">
+              <span class="section-kicker">THREE SIMPLE STEPS</span>
+              <h2>From keyword idea to content decision</h2>
+              <p>Use the report to decide whether a keyword is worth pursuing and what type of page you need to create.</p>
+              <button class="primary-button large" type="button" data-open-auth="signup">Create your account</button>
+            </div>
+            <div class="workflow-list">
+              <article><span>1</span><div><h3>Enter your target keyword</h3><p>Choose the country and search language that match your intended audience.</p></div></article>
+              <article><span>2</span><div><h3>Run the live analysis</h3><p>Gemini researches current web results while the server measures accessible ranking pages.</p></div></article>
+              <article><span>3</span><div><h3>Review the opportunity</h3><p>Compare competition, content depth, page types, gaps and recommended positioning.</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="landing-section final-cta-section">
+          <div class="landing-shell final-cta">
+            <div>
+              <span class="section-kicker">READY TO RESEARCH?</span>
+              <h2>Make your next keyword decision with evidence.</h2>
+              <p>Create an account to access the analyzer and your daily search allowance.</p>
+            </div>
+            <button class="primary-button large light" type="button" data-open-auth="signup">Start with 20 daily searches</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="public-footer">
+        <div class="landing-shell footer-row">
+          <a class="brand" href="#top"><span class="brand-mark">R</span><span>RankScope</span></a>
+          <p>AI-grounded SEO research. Rankings are estimates and can vary by location, device and time.</p>
+          <span>© <span id="footer-year"></span> RankScope</span>
+        </div>
+      </footer>
+    </div>
+
+    <div id="dashboard-app" class="dashboard-app hidden">
+      <aside class="dashboard-sidebar" id="dashboard-sidebar">
+        <div class="sidebar-header">
+          <a class="brand dashboard-brand" href="#"><span class="brand-mark">R</span><span>RankScope</span></a>
+          <button id="sidebar-close" class="icon-button sidebar-close" type="button" aria-label="Close navigation">×</button>
+        </div>
+
+        <nav class="dashboard-nav" aria-label="Dashboard navigation">
+          <button class="dashboard-nav-item active" type="button" data-dashboard-view="analyzer">
+            <span class="nav-icon">⌕</span><span>Keyword Analyzer</span>
+          </button>
+          <button class="dashboard-nav-item" type="button" data-dashboard-view="history">
+            <span class="nav-icon">↺</span><span>Search History</span>
+          </button>
+          <button id="admin-nav-item" class="dashboard-nav-item hidden" type="button" data-dashboard-view="admin">
+            <span class="nav-icon">⚙</span><span>Admin Panel</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-usage-card">
+          <div class="usage-card-heading"><span>Daily usage</span><strong id="sidebar-usage-text">0 / 20</strong></div>
+          <div class="usage-track"><span id="sidebar-usage-bar"></span></div>
+          <small id="sidebar-reset-text">Resets daily at 12:00 AM PKT</small>
+        </div>
+
+        <div class="sidebar-account">
+          <div class="account-avatar" id="sidebar-avatar">U</div>
+          <div><strong id="sidebar-name">User</strong><span id="sidebar-email">—</span></div>
+          <button id="logout-button" class="icon-button" type="button" title="Log out" aria-label="Log out">↪</button>
+        </div>
+      </aside>
+      <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <button id="sidebar-open" class="icon-button menu-button" type="button" aria-label="Open navigation">☰</button>
+          <div>
+            <span id="topbar-kicker">SEO RESEARCH WORKSPACE</span>
+            <h1 id="topbar-title">Keyword Analyzer</h1>
+          </div>
+          <div class="topbar-actions">
+            <div class="quota-pill"><span id="quota-remaining">20</span> searches left today</div>
+            <div class="topbar-avatar" id="topbar-avatar">U</div>
+          </div>
+        </header>
+
+        <div id="suspended-notice" class="suspended-notice hidden">
+          <div class="notice-icon">!</div>
+          <div><h2>Account access suspended</h2><p>Your administrator has suspended this account. Keyword analysis is unavailable until access is restored.</p></div>
+        </div>
+
+        <section id="view-analyzer" class="dashboard-view active">
+          <div class="welcome-row">
+            <div>
+              <p class="welcome-label">Welcome back, <span id="welcome-name">User</span></p>
+              <h2>Find out what you are competing against.</h2>
+              <p>Analyze a keyword, inspect the ranking landscape and identify a practical route into the SERP.</p>
+            </div>
+            <div class="date-card"><span>Today</span><strong id="current-date">—</strong><small>Pakistan Standard Time</small></div>
+          </div>
+
+          <div class="dashboard-stat-grid">
+            <article class="dashboard-stat-card"><span class="stat-icon">⌕</span><div><small>Searches used today</small><strong id="stat-used">0</strong><span id="stat-used-note">of 20 available</span></div></article>
+            <article class="dashboard-stat-card"><span class="stat-icon">✓</span><div><small>Searches remaining</small><strong id="stat-remaining">20</strong><span>resets at midnight PKT</span></div></article>
+            <article class="dashboard-stat-card"><span class="stat-icon">◎</span><div><small>Account status</small><strong id="stat-status">Active</strong><span id="stat-role">Standard user</span></div></article>
+          </div>
+
+          <section class="dashboard-panel analyzer-panel">
+            <div class="panel-heading-row">
+              <div><span class="panel-kicker">NEW ANALYSIS</span><h2>Check a keyword</h2><p>Enter one keyword or phrase. Each completed analysis uses one daily search.</p></div>
+              <span class="live-badge"><i></i> Live web research</span>
+            </div>
+            <form id="analyze-form" class="analyze-form">
+              <div class="field keyword-field">
+                <label for="keyword">Target keyword</label>
+                <div class="input-with-icon"><span>⌕</span><input id="keyword" name="keyword" type="text" minlength="2" maxlength="120" placeholder="e.g. best camera for travel" autocomplete="off" required /></div>
+              </div>
+              <div class="analyzer-form-grid">
+                <div class="field">
+                  <label for="country">Target country</label>
+                  <select id="country" name="country">
+                    <option>United States</option><option>United Kingdom</option><option>Pakistan</option><option>India</option><option>Canada</option><option>Australia</option><option>United Arab Emirates</option><option>Germany</option><option>France</option><option>Spain</option><option>Sweden</option><option>Saudi Arabia</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="language">Search language</label>
+                  <select id="language" name="language">
+                    <option>English</option><option>Urdu</option><option>Hindi</option><option>Spanish</option><option>German</option><option>French</option><option>Swedish</option><option>Arabic</option>
+                  </select>
+                </div>
+                <button class="primary-button analyze-button" type="submit" id="submit-button"><span class="button-label">Analyze keyword</span><span class="button-spinner" aria-hidden="true"></span></button>
+              </div>
+            </form>
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+          </section>
+
+          <section id="results" class="results hidden" aria-live="polite">
+            <div class="result-header"><div><span class="panel-kicker">ANALYSIS COMPLETE</span><h2 id="result-keyword">Keyword analysis</h2></div><button class="secondary-button" id="export-button" type="button">Export CSV</button></div>
+            <div class="summary-grid">
+              <article class="dashboard-panel score-card"><div><span class="card-label">Competition</span><h3 id="competition-label">—</h3></div><div class="score-ring" id="score-ring"><span id="competition-score">0</span><small>/100</small></div></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Search intent</span><strong id="search-intent">—</strong><small>Dominant SERP intent</small></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Average word count</span><strong id="average-words">—</strong><small id="measured-pages"></small></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Recommended format</span><strong id="recommended-format">—</strong><small>Best-fit page type</small></article>
+            </div>
+
+            <article class="dashboard-panel overview-panel">
+              <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">SERP OVERVIEW</span><h2>Competition and opportunity</h2></div></div>
+              <p id="competition-summary" class="overview-summary"></p>
+              <div class="overview-columns"><div><h3>Ranking pattern</h3><p id="ranking-pattern"></p></div><div><h3>Suggested content length</h3><p id="recommended-words"></p></div></div>
+              <div class="opportunities-box"><h3>Content opportunities</h3><ul id="opportunities"></ul></div>
+            </article>
+
+            <article class="dashboard-panel table-panel">
+              <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">RANKING PAGES</span><h2>Top competitor overview</h2></div></div>
+              <div class="table-scroll"><table><thead><tr><th>#</th><th>Ranking page</th><th>Type</th><th>Words</th><th>Content angle</th><th>Strengths / gaps</th></tr></thead><tbody id="results-body"></tbody></table></div>
+            </article>
+            <p class="methodology" id="methodology"></p>
+          </section>
+        </section>
+
+        <section id="view-history" class="dashboard-view">
+          <div class="view-page-heading"><div><span class="panel-kicker">YOUR RESEARCH</span><h2>Search history</h2><p>Review the keywords previously analyzed through your account.</p></div><button id="refresh-history" class="secondary-button" type="button">Refresh</button></div>
+          <article class="dashboard-panel table-panel">
+            <div id="history-empty" class="empty-state hidden"><span>⌕</span><h3>No searches yet</h3><p>Your completed keyword analyses will appear here.</p><button class="primary-button" type="button" data-dashboard-view="analyzer">Analyze your first keyword</button></div>
+            <div id="history-table-wrap" class="table-scroll"><table><thead><tr><th>Keyword</th><th>Market</th><th>Intent</th><th>Competition</th><th>Results</th><th>Date</th></tr></thead><tbody id="history-body"></tbody></table></div>
+          </article>
+        </section>
+
+        <section id="view-admin" class="dashboard-view">
+          <div class="view-page-heading"><div><span class="panel-kicker">ADMINISTRATION</span><h2>User management</h2><p>Manage account access, roles, daily limits and recent search activity.</p></div><button id="refresh-admin" class="secondary-button" type="button">Refresh data</button></div>
+          <div class="admin-stat-grid">
+            <article><small>Total users</small><strong id="admin-total-users">0</strong></article>
+            <article><small>Active users</small><strong id="admin-active-users">0</strong></article>
+            <article><small>Suspended</small><strong id="admin-suspended-users">0</strong></article>
+            <article><small>Searches today</small><strong id="admin-searches-today">0</strong></article>
+          </div>
+          <article class="dashboard-panel table-panel admin-users-panel">
+            <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">ACCOUNTS</span><h2>All users</h2></div><div class="table-filter"><input id="admin-user-filter" type="search" placeholder="Search users…" /></div></div>
+            <div class="table-scroll"><table><thead><tr><th>User</th><th>Role</th><th>Status</th><th>Today</th><th>Daily limit</th><th>Joined</th><th>Actions</th></tr></thead><tbody id="admin-users-body"></tbody></table></div>
+          </article>
+          <article class="dashboard-panel table-panel">
+            <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">ACTIVITY</span><h2>Recent keyword searches</h2></div></div>
+            <div class="table-scroll"><table><thead><tr><th>User</th><th>Keyword</th><th>Market</th><th>Intent</th><th>Competition</th><th>Date</th></tr></thead><tbody id="admin-searches-body"></tbody></table></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div id="auth-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <div class="auth-modal-card">
+        <button id="auth-close" class="modal-close" type="button" aria-label="Close">×</button>
+        <div class="auth-brand"><span class="brand-mark">R</span><span>RankScope</span></div>
+        <div class="auth-copy"><span id="auth-kicker">CREATE YOUR ACCOUNT</span><h2 id="auth-title">Start analyzing keywords</h2><p id="auth-description">Sign up with your email to receive 20 keyword analyses per day.</p></div>
+        <form id="auth-form">
+          <div id="auth-name-field" class="field"><label for="auth-name">Full name</label><input id="auth-name" type="text" maxlength="120" placeholder="Your name" autocomplete="name" /></div>
+          <div id="auth-email-field" class="field"><label for="auth-email">Email address</label><input id="auth-email" type="email" placeholder="you@example.com" autocomplete="email" required /></div>
+          <div class="field"><label for="auth-password" id="auth-password-label">Password</label><input id="auth-password" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="new-password" required /></div>
+          <button id="auth-submit" class="primary-button auth-submit" type="submit"><span>Create account</span><i class="button-spinner"></i></button>
+        </form>
+        <div id="auth-status" class="auth-status" role="status" aria-live="polite"></div>
+        <button id="forgot-password" class="link-button" type="button">Forgot your password?</button>
+        <p id="auth-switch-row" class="auth-switch">Already have an account? <button id="auth-switch" type="button">Log in</button></p>
+      </div>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
