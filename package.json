@@ -1,0 +1,21 @@
+{
+  "name": "keyword-competition-analyzer",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Netlify multi-platform keyword research app for Google, YouTube, Etsy, Amazon and eBay",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.0.0",
+    "@supabase/supabase-js": "^2.110.7"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
