@@ -604,7 +604,7 @@ export default async (req) => {
 
   const model = String(
     process.env.GEMINI_MODEL ||
-      "gemini-2.5-flash"
+      "gemini-2.5-flash-lite"
   ).trim();
 
   const ai = new GoogleGenAI({
