@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Research Google, YouTube, Etsy, Amazon and eBay keywords from one secure account dashboard."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>RankScope — Multi-Platform Keyword Research</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+    <div id="boot-screen" class="boot-screen">
+      <div class="boot-logo">R</div>
+      <div class="boot-spinner"></div>
+      <p>Loading RankScope…</p>
+    </div>
+
+    <div id="public-app" class="public-app hidden">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="RankScope home">
+          <span class="brand-mark">R</span>
+          <span>RankScope</span>
+        </a>
+        <nav class="public-nav" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <button class="text-button" type="button" data-open-auth="login">Log in</button>
+          <button class="primary-button compact" type="button" data-open-auth="signup">Create account</button>
+        </nav>
+        <button class="mobile-auth-button" type="button" data-open-auth="signup">Get started</button>
+      </header>
+
+      <main id="top">
+        <section class="landing-hero">
+          <div class="hero-glow glow-one"></div>
+          <div class="hero-glow glow-two"></div>
+          <div class="landing-shell hero-layout">
+            <div class="hero-copy">
+              <div class="eyebrow"><span></span> AI-POWERED MULTI-PLATFORM RESEARCH</div>
+              <h1>Find the right keywords for <em>every platform.</em></h1>
+              <p class="hero-lead">
+                Research platform-specific terms for Google, YouTube, Etsy, Amazon and eBay, then export organized keyword clusters in one dashboard.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-button large" type="button" data-open-auth="signup">
+                  Start free analysis
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button class="secondary-button large" type="button" data-open-auth="login">
+                  Sign in
+                </button>
+              </div>
+              <div class="hero-proof">
+                <div><strong>20</strong><span>searches per day</span></div>
+                <div><strong>5</strong><span>research platforms</span></div>
+                <div><strong>Smart</strong><span>platform-specific terms</span></div>
+              </div>
+            </div>
+
+            <div class="product-preview" aria-label="Dashboard preview">
+              <div class="preview-topbar">
+                <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+                <span class="preview-url">rankscope.app/dashboard</span>
+              </div>
+              <div class="preview-body">
+                <div class="preview-sidebar">
+                  <div class="preview-logo">R</div>
+                  <span class="preview-nav active"></span>
+                  <span class="preview-nav"></span>
+                  <span class="preview-nav"></span>
+                </div>
+                <div class="preview-content">
+                  <div class="preview-heading-row">
+                    <div><span class="preview-kicker"></span><span class="preview-title"></span></div>
+                    <span class="preview-avatar"></span>
+                  </div>
+                  <div class="preview-search">
+                    <span>wireless earbuds for running</span><b>Research</b>
+                  </div>
+                  <div class="preview-metrics">
+                    <div><small>Opportunity</small><strong>72</strong><span>Strong</span></div>
+                    <div><small>Intent</small><strong>Commercial</strong><span>Comparison-led</span></div>
+                    <div><small>Keywords</small><strong>36</strong><span>5 clusters</span></div>
+                  </div>
+                  <div class="preview-table">
+                    <div class="preview-table-head"><span>Keyword cluster</span><span>Priority</span></div>
+                    <div><i>1</i><span class="preview-line wide"></span><b>High</b></div>
+                    <div><i>2</i><span class="preview-line"></span><b>High</b></div>
+                    <div><i>3</i><span class="preview-line mid"></span><b>Medium</b></div>
+                    <div><i>4</i><span class="preview-line wide"></span><b>Medium</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip">
+          <div class="landing-shell trust-grid">
+            <span>Google SEO clusters</span>
+            <span>YouTube searches</span>
+            <span>Etsy listing terms</span>
+            <span>Amazon buyer keywords</span>
+            <span>eBay listing phrases</span>
+          </div>
+        </section>
+
+        <section id="features" class="landing-section">
+          <div class="landing-shell">
+            <div class="section-intro centered">
+              <span class="section-kicker">EVERYTHING IN ONE PLACE</span>
+              <h2>One workspace for five search platforms</h2>
+              <p>Choose the platform first, then generate keyword clusters, title terms, action packs and export-ready research for that exact channel.</p>
+            </div>
+            <div class="feature-grid">
+              <article class="feature-card featured">
+                <div class="feature-icon">01</div>
+                <h3>Platform opportunity score</h3>
+                <p>Review a 0–100 opportunity estimate alongside intent, priority and qualitative competition labels.</p>
+                <div class="mini-score"><strong>42</strong><span><b style="width:42%"></b></span><small>Moderate</small></div>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">02</div>
+                <h3>Google and YouTube research</h3>
+                <p>Generate SEO clusters for websites or switch to video-focused searches, titles, hooks and formats.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">03</div>
+                <h3>Marketplace buyer terms</h3>
+                <p>Build listing-ready phrase banks for Etsy, Amazon and eBay based on buyer intent and product specifics.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">04</div>
+                <h3>Platform action packs</h3>
+                <p>Receive title patterns, description guidance, supporting terms and platform-specific execution ideas.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">05</div>
+                <h3>Personal history</h3>
+                <p>Every completed search is saved with its platform, market, intent, opportunity score and keyword count.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-icon">06</div>
+                <h3>Daily usage control</h3>
+                <p>Each standard account receives 20 analyses per Pakistan day, with secure server-side quota enforcement.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="landing-section dark-section">
+          <div class="landing-shell workflow-layout">
+            <div class="section-intro">
+              <span class="section-kicker">THREE SIMPLE STEPS</span>
+              <h2>From seed phrase to platform-ready terms</h2>
+              <p>Use each tab to match the keyword language, intent and execution style of the selected platform.</p>
+              <button class="primary-button large" type="button" data-open-auth="signup">Create your account</button>
+            </div>
+            <div class="workflow-list">
+              <article><span>1</span><div><h3>Select the platform</h3><p>Choose Google, YouTube, Etsy, Amazon or eBay before entering your seed phrase.</p></div></article>
+              <article><span>2</span><div><h3>Choose your research goal</h3><p>Target balanced ideas, low-competition terms, buyer intent, tutorials, listings or platform-specific use cases.</p></div></article>
+              <article><span>3</span><div><h3>Export the keyword clusters</h3><p>Review the strategy, keyword groups, action packs and download the final terms as CSV.</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="landing-section final-cta-section">
+          <div class="landing-shell final-cta">
+            <div>
+              <span class="section-kicker">READY TO RESEARCH?</span>
+              <h2>Make your next keyword decision with evidence.</h2>
+              <p>Create an account to access the analyzer and your daily search allowance.</p>
+            </div>
+            <button class="primary-button large light" type="button" data-open-auth="signup">Start with 20 daily searches</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="public-footer">
+        <div class="landing-shell footer-row">
+          <a class="brand" href="#top"><span class="brand-mark">R</span><span>RankScope</span></a>
+          <p>AI-assisted multi-platform keyword research. Validate important terms with your preferred platform data source before publishing.</p>
+          <span>© <span id="footer-year"></span> RankScope</span>
+        </div>
+      </footer>
+    </div>
+
+    <div id="dashboard-app" class="dashboard-app hidden">
+      <aside class="dashboard-sidebar" id="dashboard-sidebar">
+        <div class="sidebar-header">
+          <a class="brand dashboard-brand" href="#"><span class="brand-mark">R</span><span>RankScope</span></a>
+          <button id="sidebar-close" class="icon-button sidebar-close" type="button" aria-label="Close navigation">×</button>
+        </div>
+
+        <nav class="dashboard-nav" aria-label="Dashboard navigation">
+          <button class="dashboard-nav-item active" type="button" data-dashboard-view="analyzer">
+            <span class="nav-icon">⌕</span><span>Keyword Research</span>
+          </button>
+          <button class="dashboard-nav-item" type="button" data-dashboard-view="history">
+            <span class="nav-icon">↺</span><span>Search History</span>
+          </button>
+          <button id="admin-nav-item" class="dashboard-nav-item hidden" type="button" data-dashboard-view="admin">
+            <span class="nav-icon">⚙</span><span>Admin Panel</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-usage-card">
+          <div class="usage-card-heading"><span>Daily usage</span><strong id="sidebar-usage-text">0 / 20</strong></div>
+          <div class="usage-track"><span id="sidebar-usage-bar"></span></div>
+          <small id="sidebar-reset-text">Resets daily at 12:00 AM PKT</small>
+        </div>
+
+        <div class="sidebar-account">
+          <div class="account-avatar" id="sidebar-avatar">U</div>
+          <div><strong id="sidebar-name">User</strong><span id="sidebar-email">—</span></div>
+          <button id="logout-button" class="icon-button" type="button" title="Log out" aria-label="Log out">↪</button>
+        </div>
+      </aside>
+      <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <button id="sidebar-open" class="icon-button menu-button" type="button" aria-label="Open navigation">☰</button>
+          <div>
+            <span id="topbar-kicker">SEO RESEARCH WORKSPACE</span>
+            <h1 id="topbar-title">Keyword Research</h1>
+          </div>
+          <div class="topbar-actions">
+            <div class="quota-pill"><span id="quota-remaining">20</span> searches left today</div>
+            <div class="topbar-avatar" id="topbar-avatar">U</div>
+          </div>
+        </header>
+
+        <div id="suspended-notice" class="suspended-notice hidden">
+          <div class="notice-icon">!</div>
+          <div><h2>Account access suspended</h2><p>Your administrator has suspended this account. Keyword analysis is unavailable until access is restored.</p></div>
+        </div>
+
+        <section id="view-analyzer" class="dashboard-view active">
+          <div class="welcome-row">
+            <div>
+              <p class="welcome-label">Welcome back, <span id="welcome-name">User</span></p>
+              <h2>Research the terms each platform needs.</h2>
+              <p>Switch between Google, YouTube, Etsy, Amazon and eBay to generate platform-specific keyword clusters and execution terms.</p>
+            </div>
+            <div class="date-card"><span>Today</span><strong id="current-date">—</strong><small>Pakistan Standard Time</small></div>
+          </div>
+
+          <div class="dashboard-stat-grid">
+            <article class="dashboard-stat-card"><span class="stat-icon">⌕</span><div><small>Searches used today</small><strong id="stat-used">0</strong><span id="stat-used-note">of 20 available</span></div></article>
+            <article class="dashboard-stat-card"><span class="stat-icon">✓</span><div><small>Searches remaining</small><strong id="stat-remaining">20</strong><span>resets at midnight PKT</span></div></article>
+            <article class="dashboard-stat-card"><span class="stat-icon">◎</span><div><small>Account status</small><strong id="stat-status">Active</strong><span id="stat-role">Standard user</span></div></article>
+          </div>
+
+          <section class="dashboard-panel analyzer-panel">
+            <div class="panel-heading-row">
+              <div>
+                <span class="panel-kicker">MULTI-PLATFORM RESEARCH</span>
+                <h2 id="research-panel-title">Google keyword research</h2>
+                <p id="research-panel-description">Build SEO keyword clusters for website pages, articles and content planning.</p>
+              </div>
+              <span class="live-badge"><i></i> Platform-specific AI research</span>
+            </div>
+
+            <div class="platform-tabs" role="tablist" aria-label="Keyword research platform">
+              <button class="platform-tab active" type="button" role="tab" aria-selected="true" data-platform="google">
+                <span class="platform-tab-icon">G</span><span><strong>Google</strong><small>SEO keywords</small></span>
+              </button>
+              <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform="youtube">
+                <span class="platform-tab-icon">▶</span><span><strong>YouTube</strong><small>Video searches</small></span>
+              </button>
+              <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform="etsy">
+                <span class="platform-tab-icon">E</span><span><strong>Etsy</strong><small>Listing terms</small></span>
+              </button>
+              <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform="amazon">
+                <span class="platform-tab-icon">A</span><span><strong>Amazon</strong><small>Buyer keywords</small></span>
+              </button>
+              <button class="platform-tab" type="button" role="tab" aria-selected="false" data-platform="ebay">
+                <span class="platform-tab-icon">e</span><span><strong>eBay</strong><small>Listing searches</small></span>
+              </button>
+            </div>
+
+            <form id="analyze-form" class="analyze-form">
+              <input id="platform" name="platform" type="hidden" value="google" />
+              <div class="field keyword-field">
+                <label id="keyword-label" for="keyword">Seed keyword or topic</label>
+                <div class="input-with-icon"><span>⌕</span><input id="keyword" name="keyword" type="text" minlength="2" maxlength="120" placeholder="e.g. best camera for travel" autocomplete="off" required /></div>
+                <small id="keyword-help" class="field-help">Enter one broad topic, product, service or content idea.</small>
+              </div>
+              <div class="analyzer-form-grid multi-platform-form-grid">
+                <div class="field">
+                  <label for="research-goal">Research goal</label>
+                  <select id="research-goal" name="researchGoal"></select>
+                </div>
+                <div class="field">
+                  <label for="country">Target country</label>
+                  <select id="country" name="country">
+                    <option>United States</option><option>United Kingdom</option><option>Pakistan</option><option>India</option><option>Canada</option><option>Australia</option><option>United Arab Emirates</option><option>Germany</option><option>France</option><option>Spain</option><option>Sweden</option><option>Saudi Arabia</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="language">Research language</label>
+                  <select id="language" name="language">
+                    <option>English</option><option>Urdu</option><option>Hindi</option><option>Spanish</option><option>German</option><option>French</option><option>Swedish</option><option>Arabic</option>
+                  </select>
+                </div>
+                <button class="primary-button analyze-button" type="submit" id="submit-button"><span class="button-label">Research Google keywords</span><span class="button-spinner" aria-hidden="true"></span></button>
+              </div>
+            </form>
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+          </section>
+
+          <section id="results" class="results hidden" aria-live="polite">
+            <div class="result-header">
+              <div><span class="panel-kicker">RESEARCH COMPLETE</span><div class="result-title-row"><h2 id="result-keyword">Keyword research</h2><span id="result-platform" class="platform-result-badge">Google</span></div></div>
+              <button class="secondary-button" id="export-button" type="button">Export CSV</button>
+            </div>
+
+            <div class="summary-grid">
+              <article class="dashboard-panel score-card"><div><span class="card-label">Opportunity</span><h3 id="opportunity-label">—</h3></div><div class="score-ring" id="score-ring"><span id="opportunity-score">0</span><small>/100</small></div></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Dominant intent</span><strong id="dominant-intent">—</strong><small>Primary platform intent</small></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Keywords generated</span><strong id="total-keywords">0</strong><small id="cluster-count">Across 0 clusters</small></article>
+              <article class="dashboard-panel metric-card"><span class="card-label">Recommended format</span><strong id="recommended-format">—</strong><small>Best-fit asset or listing</small></article>
+            </div>
+
+            <article class="dashboard-panel overview-panel">
+              <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">PLATFORM STRATEGY</span><h2>Research summary and execution plan</h2></div></div>
+              <p id="research-summary" class="overview-summary"></p>
+              <div class="overview-columns"><div><h3>Title pattern</h3><p id="title-pattern"></p></div><div><h3>Description guidance</h3><p id="description-guidance"></p></div></div>
+              <div class="opportunities-box"><h3>Quick wins</h3><ul id="quick-wins"></ul></div>
+            </article>
+
+            <section id="action-packs" class="action-pack-grid"></section>
+
+            <article class="dashboard-panel keyword-clusters-panel">
+              <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">KEYWORD CLUSTERS</span><h2 id="cluster-section-title">Platform-ready keyword ideas</h2></div></div>
+              <div id="keyword-clusters" class="keyword-clusters"></div>
+            </article>
+
+            <article class="dashboard-panel term-bank-panel">
+              <div class="term-bank-column"><h3>Supporting terms</h3><div id="supporting-terms" class="term-chips"></div></div>
+              <div class="term-bank-column"><h3>Terms to avoid or review</h3><div id="avoid-terms" class="term-chips warning"></div></div>
+            </article>
+            <p class="methodology" id="methodology"></p>
+          </section>
+        </section>
+
+        <section id="view-history" class="dashboard-view">
+          <div class="view-page-heading"><div><span class="panel-kicker">YOUR RESEARCH</span><h2>Search history</h2><p>Review your previous Google, YouTube, Etsy, Amazon and eBay keyword research.</p></div><button id="refresh-history" class="secondary-button" type="button">Refresh</button></div>
+          <article class="dashboard-panel table-panel">
+            <div id="history-empty" class="empty-state hidden"><span>⌕</span><h3>No searches yet</h3><p>Your completed keyword analyses will appear here.</p><button class="primary-button" type="button" data-dashboard-view="analyzer">Analyze your first keyword</button></div>
+            <div id="history-table-wrap" class="table-scroll"><table><thead><tr><th>Keyword</th><th>Platform</th><th>Market</th><th>Intent</th><th>Opportunity</th><th>Keywords</th><th>Date</th></tr></thead><tbody id="history-body"></tbody></table></div>
+          </article>
+        </section>
+
+        <section id="view-admin" class="dashboard-view">
+          <div class="view-page-heading"><div><span class="panel-kicker">ADMINISTRATION</span><h2>User management</h2><p>Manage account access, roles, daily limits and recent search activity.</p></div><button id="refresh-admin" class="secondary-button" type="button">Refresh data</button></div>
+          <div class="admin-stat-grid">
+            <article><small>Total users</small><strong id="admin-total-users">0</strong></article>
+            <article><small>Active users</small><strong id="admin-active-users">0</strong></article>
+            <article><small>Suspended</small><strong id="admin-suspended-users">0</strong></article>
+            <article><small>Searches today</small><strong id="admin-searches-today">0</strong></article>
+          </div>
+          <article class="dashboard-panel table-panel admin-users-panel">
+            <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">ACCOUNTS</span><h2>All users</h2></div><div class="table-filter"><input id="admin-user-filter" type="search" placeholder="Search users…" /></div></div>
+            <div class="table-scroll"><table><thead><tr><th>User</th><th>Role</th><th>Status</th><th>Today</th><th>Daily limit</th><th>Joined</th><th>Actions</th></tr></thead><tbody id="admin-users-body"></tbody></table></div>
+          </article>
+          <article class="dashboard-panel table-panel">
+            <div class="panel-heading-row compact-heading"><div><span class="panel-kicker">ACTIVITY</span><h2>Recent platform research</h2></div></div>
+            <div class="table-scroll"><table><thead><tr><th>User</th><th>Keyword</th><th>Platform</th><th>Market</th><th>Intent</th><th>Opportunity</th><th>Date</th></tr></thead><tbody id="admin-searches-body"></tbody></table></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div id="auth-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <div class="auth-modal-card">
+        <button id="auth-close" class="modal-close" type="button" aria-label="Close">×</button>
+        <div class="auth-brand"><span class="brand-mark">R</span><span>RankScope</span></div>
+        <div class="auth-copy"><span id="auth-kicker">CREATE YOUR ACCOUNT</span><h2 id="auth-title">Start analyzing keywords</h2><p id="auth-description">Sign up with your email to receive 20 keyword analyses per day.</p></div>
+        <form id="auth-form">
+          <div id="auth-name-field" class="field"><label for="auth-name">Full name</label><input id="auth-name" type="text" maxlength="120" placeholder="Your name" autocomplete="name" /></div>
+          <div id="auth-email-field" class="field"><label for="auth-email">Email address</label><input id="auth-email" type="email" placeholder="you@example.com" autocomplete="email" required /></div>
+          <div class="field"><label for="auth-password" id="auth-password-label">Password</label><input id="auth-password" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="new-password" required /></div>
+          <button id="auth-submit" class="primary-button auth-submit" type="submit"><span>Create account</span><i class="button-spinner"></i></button>
+        </form>
+        <div id="auth-status" class="auth-status" role="status" aria-live="polite"></div>
+        <button id="forgot-password" class="link-button" type="button">Forgot your password?</button>
+        <p id="auth-switch-row" class="auth-switch">Already have an account? <button id="auth-switch" type="button">Log in</button></p>
+      </div>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
