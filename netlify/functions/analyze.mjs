@@ -349,7 +349,7 @@ export default async (req) => {
   }
 
   const ai = new GoogleGenAI({ apiKey });
-  const model = process.env.GEMINI_MODEL || "gemini-3.5-flash";
+  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
   const prompt = `
 You are an SEO SERP analyst. Search the live web for the exact keyword below and analyze the organic results for the requested market.
@@ -400,15 +400,13 @@ Required JSON shape:
   let rawText;
   try {
     const interaction = await ai.interactions.create({
-      model,
-      input: prompt,
-      tools: [{ type: "google_search" }, { type: "url_context" }],
-      response_format: {
-        type: "text",
-        mime_type: "application/json",
-        schema: analysisSchema,
-      },
-    });
+  model,
+  input: prompt,
+  tools: [{ type: "google_search" }, { type: "url_context" }],
+  generation_config: {
+    temperature: 0.2,
+  },
+});
     rawText = interaction.output_text;
   } catch (error) {
     console.error("Gemini request failed", error);
